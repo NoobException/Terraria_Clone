@@ -10,10 +10,13 @@ class Generator
 		float scale = 50.0f;
 		//Height range
 		int minHeight = 2, maxHeight = 10;
+		//Offset
+		int offsetX;
 		//Function returning new Chunk
 		Chunk* getChunkAt(int x, int y);
 		//Initializer
 		Generator(float _scale,int _minHeight, int _maxHeight);
+		void RandomOffset();
 	private:
 		//Get main tile at position
 		int getTileAt(int, int);

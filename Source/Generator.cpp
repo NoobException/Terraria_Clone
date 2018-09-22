@@ -9,7 +9,7 @@
 #include "Constants.h"
 
 
-Generator::RandomOffset()
+void Generator::RandomOffset()
 {
 	srand(time(NULL));
 	offsetX = rand();
