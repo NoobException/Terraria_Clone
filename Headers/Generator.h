@@ -2,6 +2,7 @@
 #define GENERATOR_H
 
 #include "Chunk.h"
+#include "Tile.h"
 
 class Generator
 {
@@ -12,6 +13,7 @@ class Generator
 		int minHeight = 2, maxHeight = 10;
 		//Offset
 		int offsetX;
+		int offsetY;
 		//Function returning new Chunk
 		Chunk* getChunkAt(int x, int y);
 		//Initializer
@@ -26,6 +28,11 @@ class Generator
 		int getCaveAt(int, int);
 		//Get tile above ground
 		int getIslandAt(int, int);
+
+		float getNoiseAt(int, int);
+		float getNoiseAt(int);
+
+		void digCaves(int, int, Tile**);
 
 };
 

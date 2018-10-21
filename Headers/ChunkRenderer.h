@@ -1,10 +1,11 @@
 #ifndef CHUNK_RENDERER_H
 #define CHUNK_RENDERER_H
-#include"Tile.h"
+#include "Tile.h"
 #include "Constants.h"
 #include "BasicShader.h"
 
-class ChunkRenderer{
+class ChunkRenderer
+{
     public:
         ChunkRenderer(Tile tiles[CHUNK_SIZE][CHUNK_SIZE]);
         ~ChunkRenderer();

@@ -1,11 +1,12 @@
 #ifndef TILE_H
 #define TILE_H
 
-struct Tile{
+enum TileID {AIR,STONE, SOIL, GRASS, ORE};
+struct Tile
+{
     unsigned int id;
-    bool isDirectional(){
-        return id == 3;
-    };
+    bool isDirectional()
+        {return id == GRASS;}
 };
 
 #endif
